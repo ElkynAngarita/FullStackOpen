@@ -1,4 +1,9 @@
 ```mermaid
+
+---
+title: New note on the page (NOTES) https://studies.cs.helsinki.fi/exampleapp/notes
+---
+
 sequenceDiagram
 
     user->>browser: Type a new note and clik on send
@@ -30,7 +35,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: [{ "content": "notes spa", "date": "2023-1-1" }, ... 100 notes]
+    server-->>browser: [{ "content": "notes note pag", "date": "2023-1-1" }, ... 100 notes]
     deactivate server
 
     Note right of browser: The browser executes the callback<br/>function that renders the notes
